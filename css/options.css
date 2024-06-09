@@ -1,0 +1,61 @@
+:root {
+	--options-textarea-width: 90%;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #121212;
+	color: #e0e0e0;
+	margin: 0;
+	padding: 20px;
+}
+
+h1 {
+	color: #bb86fc;
+}
+
+/* Apply flexbox layout to the container holding the textarea and the button. */
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center children (textarea) horizontally */
+	width: 100%;
+}
+
+textarea {
+	width: var(--options-textarea-width);
+	height: 150px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 8px;
+	font-size: 16px;
+	margin-bottom: 10px; /* Ensure there's space between textarea and button */
+}
+
+/* Aligned to the right of the textarea. */
+.button-container {
+	width: var(--options-textarea-width);
+	display: flex;
+	justify-content: flex-end; /* Align its content to the right. */
+	margin-bottom: 10px;
+}
+
+button {
+	background-color: #6200ee;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3700b3;
+}
+
+label {
+	margin-top: 10px;
+}

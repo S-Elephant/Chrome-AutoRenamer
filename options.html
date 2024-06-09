@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Auto Renamer Options</title>
+	<link rel="stylesheet" href="css/options.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Partial site matches</h1>
+		<textarea id="urls" placeholder="Enter URLs to match, each on a separate line.."></textarea><br>
+		
+		<h1>Rename into values</h1>
+		<textarea id="renames" placeholder="Enter possible values that tabs get renamed into, each on a seprate line.."></textarea><br>
+		
+		<label for="removeIcon">Also remove icon (this change will apply to re-opened tabs, not on refresh):</label>
+		<input type="checkbox" id="removeIcon">
+		
+		<label for="runInIncognitoOnly">Run in Incognito mode only:</label>
+		<input type="checkbox" id="runInIncognitoOnly">
+		
+		<div class="button-container">
+			<button id="save">Save</button>
+		</div>
+		<div class="button-container">
+			<div id="saveStatus"></div>
+		</div>					
+	</div>
+	<script type="module" src="options.js"></script>
+</body>
+</html>
